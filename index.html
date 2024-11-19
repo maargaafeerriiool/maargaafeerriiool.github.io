@@ -1,48 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Candela Simón | Frontend Developer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Candela Simón - Frontend Developer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="candela-pfp.jpg" alt="Candela Simón" class="profile-img">
+        <h1>Candela Simón</h1>
+        <p class="role">Frontend Developer</p>
+        <div class="social-links">
+            <a href="https://github.com/candela-sv" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/candela-simón-verdaguer/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="candela.simon.verdaguer@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
     </header>
-    
-    <section id="about">
-        <h1>Hola, soy Candela Simón</h1>
-        <p>Soy una Frontend Developer apasionada por crear experiencias web increíbles. Trabajo con tecnologías modernas como React, JavaScript, HTML y CSS.</p>
+
+    <section id="about" class="container">
+        <h2>About me</h2>
+        <p>
+            I'm a frontend developer passionate about creating intuitive and engaging web experiences. 
+            I specialize in building modern web applications using the latest technologies and 
+            following development best practices. With solid knowledge in both frontend and 
+            backend, I can develop complete and scalable web solutions.
+        </p>
     </section>
-    
-    <section id="projects">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="https://github.com/username/proyecto1">Proyecto 1</a>: Descripción breve del proyecto.</li>
-            <li><a href="https://github.com/username/proyecto2">Proyecto 2</a>: Descripción breve del proyecto.</li>
-        </ul>
+
+    <section id="experience" class="container">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <div class="experience-header">
+                <h3>Frontend Developer</h3>
+                <span class="company">Firechip</span>
+                <span class="date">November 2024 - Present</span>
+                <span class="location">Barcelona, Catalonia, Spain · On-site</span>
+            </div>
+            <ul class="experience-details">
+                <li>Developed and maintained design systems with React for multiple brands, ensuring consistency and scalability across various applications.</li>
+                <li>Built Progressive Web Apps with a focus on performance, accessibility, and offline functionality.</li>
+                <li>Collaborated with backend developers to integrate GraphQL APIs, enabling efficient data fetching and management.</li>
+                <li>Contributed to the development of user interfaces for IoT and mobile device management applications, focusing on user experience and responsive design.</li>
+            </ul>
+        </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contacto</h2>
-        <p>Si deseas trabajar conmigo o tienes alguna consulta, ¡no dudes en contactarme!</p>
-        <ul>
-            <li><a href="mailto:candela@email.com">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/username">LinkedIn</a></li>
-        </ul>
+
+    <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive</h3>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Candela Simón</p>
+        <p>&copy; 2024 Candela Simón. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
