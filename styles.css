@@ -179,3 +179,47 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+#education {
+    padding: 4rem 0;
+}
+
+#education h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 2rem;
+}
+
+.education-card {
+    background: var(--gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--dark);
+}
+
+.education-card h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.date {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.location {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 0.25rem;
+}
+
