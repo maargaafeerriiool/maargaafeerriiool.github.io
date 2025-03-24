@@ -5,158 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Margalida Ferriol Torres - Desenvolupadora Frontend</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
+    <header class="hero" id="home">
         <div class="container header-flex">
-            <img src="margalida.png" alt="Margalida Ferriol Torres" class="profile-img">
-            <div class="header-text">
-                <h1>Margalida Ferriol Torres</h1>
-                <p class="role">Desenvolupadora Frontend</p>
+            <div class="intro" data-aos="fade-right">
+                <h1>Hola! Sóc <span>Margalida Ferriol Torres</span></h1>
+                <p>Desenvolupadora Frontend | Apassionada per la tecnologia, el disseny i el treball en equip.</p>
                 <div class="social-links">
                     <a href="https://github.com/maargaafeerriiool" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/margalida-ferriol-torres/" target="_blank"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:mferrioltorres@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
+                <a href="#contacte" class="btn-primary">Contacta amb mi</a>
             </div>
+            <img src="margalida.png" alt="Margalida Ferriol Torres" class="profile-img" data-aos="fade-left">
         </div>
     </header>
 
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">Sobre mi</a></li>
+            <li><a href="#skills">Habilitats</a></li>
+            <li><a href="#experience">Experiència</a></li>
+            <li><a href="#education">Formació</a></li>
+            <li><a href="#projects">Projectes</a></li>
+            <li><a href="#contacte">Contacte</a></li>
+        </ul>
+    </nav>
+
     <main class="container">
-        <section id="about" class="fade-in">
+        <section id="about" data-aos="fade-up">
             <h2>Sobre mi</h2>
-            <p>
-                Sóc una desenvolupadora frontend apassionada, actualment estudiant Desenvolupament d’Aplicacions Multiplataforma a Prat Educació. M’encanta crear aplicacions útils, intuïtives i boniques, i gaudeixo treballant en equip, aprenent tecnologies noves i participant en projectes socials.
-            </p>
-            <ul>
-                <li>📍 <strong>Ubicació:</strong> Artà, Mallorca, Illes Balears</li>
-                <li>🎓 <strong>Formació complementària:</strong> Curs d’Estiu “Fes la teva pròpia app” (UAB), Curs de monitora + vetlladora NESE (Escola de Monitors Barcelona)</li>
-                <li>🏇 <strong>Certificació:</strong> Exàmens Galops 1 i 2 en equitació (RFHE, 2017)</li>
-                <li>🎯 <strong>Valors:</strong> Creativitat, pensament crític, iniciativa, empatia, organització i responsabilitat</li>
+            <p>Sóc estudiant de DAM a Prat Educació i apassionada per la tecnologia. M'encanta construir aplicacions útils i creatives amb un toc de disseny, sempre buscant millorar l'experiència d'usuari i col·laborar en projectes socials.</p>
+            <ul class="tags">
+                <li>🌍 Artà, Mallorca</li>
+                <li>💬 Català, Castellà, Anglès (B2)</li>
+                <li>📚 Creativitat · Empatia · Pensament Crític</li>
             </ul>
         </section>
 
-        <section id="skills" class="fade-in">
+        <section id="skills" data-aos="fade-up">
             <h2>Habilitats i Tecnologies</h2>
-
-            <h3>🔧 Desenvolupament Web</h3>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
-                <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
-                <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
-                <div class="skill-card"><i class="fab fa-react"></i><h3>React</h3></div>
-                <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
-                <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
-                <div class="skill-card"><i class="fab fa-android"></i><h3>Desenvolupament Multiplataforma</h3></div>
-            </div>
-
-            <h3>🛠️ Eines i Pràctiques</h3>
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
-                <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
-                <div class="skill-card"><i class="fab fa-github"></i><h3>GitHub</h3></div>
-                <div class="skill-card"><i class="fas fa-file-code"></i><h3>Overleaf</h3></div>
-                <div class="skill-card"><i class="fab fa-docker"></i><h3>Docker</h3></div>
-                <div class="skill-card"><i class="fas fa-project-diagram"></i><h3>Metodologies Àgils</h3></div>
-                <div class="skill-card"><i class="fas fa-layer-group"></i><h3>XML</h3></div>
-                <div class="skill-card"><i class="fab fa-node"></i><h3>Webpack</h3></div>
+            <div class="skills-categories">
+                <div class="category">
+                    <h3>🌐 Frontend</h3>
+                    <ul class="skill-tags">
+                        <li>HTML</li><li>CSS</li><li>JavaScript</li><li>React</li><li>Responsive</li><li>Tailwind</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>⚙️ Backend & Dades</h3>
+                    <ul class="skill-tags">
+                        <li>Java</li><li>MySQL</li><li>Firebase</li><li>Python</li><li>XML</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>🛠️ Eines</h3>
+                    <ul class="skill-tags">
+                        <li>Git</li><li>GitHub</li><li>Overleaf</li><li>Docker</li><li>Webpack</li>
+                    </ul>
+                </div>
+                <div class="category">
+                    <h3>🚀 Metodologies</h3>
+                    <ul class="skill-tags">
+                        <li>Agile</li><li>SCRUM</li><li>Organització</li><li>Planificació</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section id="experience" class="fade-in">
-            <h2>Experiència Professional</h2>
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Desenvolupadora Frontend (Pràctiques)</h3>
-                    <span class="company">Firechip</span>
-                    <span class="date">Novembre 2024 - Abril 2025</span>
-                    <span class="location">Barcelona, Catalunya</span>
+        <section id="experience" data-aos="fade-up">
+            <h2>Experiència</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Desenvolupadora Frontend · Firechip</h3>
+                    <span>Nov 2024 - Abr 2025</span>
+                    <p>Creació d’interfícies React, integració GraphQL, desenvolupament de PWA i aplicacions per IoT.</p>
                 </div>
-                <ul class="experience-details">
-                    <li>Desenvolupament de sistemes de disseny amb React.</li>
-                    <li>Creació de Progressive Web Apps accessibles i ràpides.</li>
-                    <li>Integració de GraphQL per a una gestió eficient de dades.</li>
-                    <li>Interfícies per a aplicacions IoT i dispositius mòbils.</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Monitora en pràctiques</h3>
-                    <span class="company">Eix Estels</span>
-                    <span class="date">Juliol 2024</span>
-                    <span class="location">Catalunya</span>
+                <div class="timeline-item">
+                    <h3>Monitora en pràctiques · Eix Estels</h3>
+                    <span>Juliol 2024</span>
+                    <p>Organització d'activitats infantils, adaptades a necessitats especials.</p>
                 </div>
-                <ul class="experience-details">
-                    <li>Organització d’activitats per infants, també amb necessitats educatives especials.</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Atenció al client (autònoma)</h3>
-                    <span class="company">Fet de Ferro</span>
-                    <span class="date">Juny - Setembre 2024</span>
-                    <span class="location">Mallorca, Illes Balears</span>
+                <div class="timeline-item">
+                    <h3>Autònoma · Fet de Ferro</h3>
+                    <span>Juny - Set 2024</span>
+                    <p>Facturació, arxiu i atenció al client en una empresa artesanal.</p>
                 </div>
-                <ul class="experience-details">
-                    <li>Gestió de facturació, arxiu i comunicació amb clients.</li>
-                </ul>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3>Membre del Consell d'Estudiants</h3>
-                    <span class="company">Sindicat d'Estudiants IES Llorenç Garcías i Font</span>
-                    <span class="date">2018 - 2023</span>
-                    <span class="location">Artà, Mallorca</span>
+                <div class="timeline-item">
+                    <h3>Sindicat d'Estudiants</h3>
+                    <span>2018 - 2023</span>
+                    <p>Organització d'activitats escolars i defensa dels drets dels estudiants.</p>
                 </div>
-                <ul class="experience-details">
-                    <li>Promoció de drets estudiantils i organització d’activitats educatives.</li>
-                </ul>
             </div>
         </section>
 
-        <section id="education" class="fade-in">
-            <h2>Formació Acadèmica</h2>
-            <div class="education-card">
-                <h3>CFGS Desenvolupament d'Aplicacions Multiplataforma</h3>
-                <span class="institution">Prat Educació</span>
-                <span class="date">2023 - 2025</span>
-                <span class="location">Barcelona</span>
-            </div>
-            <div class="education-card">
-                <h3>Batxillerat Tecnològic</h3>
-                <span class="institution">IES Llorenç Garcías i Font</span>
-                <span class="date">2021 - 2023</span>
-                <span class="location">Artà, Mallorca</span>
-            </div>
-            <div class="education-card">
-                <h3>Curs d'Estiu "Fes la teva pròpia app"</h3>
-                <span class="institution">UAB</span>
-                <span class="date">2021 - 2022</span>
-            </div>
-            <div class="education-card">
-                <h3>Curs de Monitora + Vetlladora NESE</h3>
-                <span class="institution">Escola de Monitors Barcelona</span>
-                <span class="date">2024</span>
+        <section id="education" data-aos="fade-up">
+            <h2>Formació</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>CFGS DAM · Prat Educació</h3>
+                    <span>2023 - 2025</span>
+                </div>
+                <div class="card">
+                    <h3>Batxillerat Tecnològic · IES Llorenç Garcías i Font</h3>
+                    <span>2021 - 2023</span>
+                </div>
+                <div class="card">
+                    <h3>Curs App · UAB</h3>
+                    <span>2021 - 2022</span>
+                </div>
+                <div class="card">
+                    <h3>Monitora + Vetlladora NESE</h3>
+                    <span>2024</span>
+                </div>
             </div>
         </section>
 
-        <section id="languages" class="fade-in">
-            <h2>Idiomes</h2>
-            <ul>
-                <li>Català: Nadiu</li>
-                <li>Castellà: Nadiu</li>
-                <li>Anglès: B2</li>
+        <section id="projects" data-aos="fade-up">
+            <h2>Projectes</h2>
+            <div class="project-gallery">
+                <div class="project-card">
+                    <h3>📱 Portfolio personal</h3>
+                    <p>Pàgina web responsive feta en HTML, CSS i JS amb interactivitat i disseny personalitzat.</p>
+                    <a href="#">Veure</a>
+                </div>
+                <div class="project-card">
+                    <h3>🛒 Ecommerce Mostrari</h3>
+                    <p>Mostrari de productes per una empresa de ferro amb React i Firebase Firestore.</p>
+                    <a href="#">Veure</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacte" data-aos="fade-up">
+            <h2>Contacte</h2>
+            <p>Vols col·laborar o contactar amb mi? Pots fer-ho fàcilment:</p>
+            <ul class="contact-info">
+                <li><i class="fas fa-envelope"></i> mferrioltorres@gmail.com</li>
+                <li><i class="fab fa-linkedin"></i> linkedin.com/in/margalida-ferriol-torres</li>
+                <li><i class="fab fa-github"></i> github.com/maargaafeerriiool</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Margalida Ferriol Torres. Tots els drets reservats.</p>
+        <p>&copy; 2025 Margalida Ferriol Torres · Tots els drets reservats</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
