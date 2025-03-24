@@ -236,3 +236,72 @@ footer {
     padding: 4rem 1rem;
   }
 }
+
+/* NOVES SECCIONS */
+
+/* Certificats i aficions */
+.certificats-grid, .aficions-grid, .idiomes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.certificat-card, .aficio-card, .idioma-card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-left: 4px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+}
+
+.certificat-card h4, .aficio-card h4, .idioma-card h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Formulari de contacte */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+.contact-form button {
+  background: var(--primary);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.contact-form button:hover {
+  background: #eab308;
+}
+
+/* Responsive extra */
+@media (max-width: 480px) {
+  .certificat-card, .aficio-card, .idioma-card {
+    text-align: center;
+  }
+}
+
