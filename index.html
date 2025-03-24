@@ -10,26 +10,31 @@
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Navegació -->
   <nav class="navbar">
     <div class="container">
-      <h1 class="logo">Margalida Ferriol Torres</h1>
+      <h1 class="logo">Margalida Ferriol</h1>
       <ul>
         <li><a href="#about">Sobre mi</a></li>
         <li><a href="#skills">Habilitats</a></li>
         <li><a href="#projects">Projectes</a></li>
         <li><a href="#experience">Experiència</a></li>
         <li><a href="#education">Formació</a></li>
+        <li><a href="#certificats">Certificats</a></li>
+        <li><a href="#aficions">Aficions</a></li>
+        <li><a href="#idiomes">Idiomes</a></li>
         <li><a href="#contact">Contacte</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- Hero -->
   <header class="hero" id="home">
     <div class="hero-content">
       <div class="hero-text" data-aos="fade-right">
         <h2>Hola! Sóc</h2>
         <h1>Margalida Ferriol Torres</h1>
-        <p>Desenvolupadora frontend apassionada per la tecnologia, la creativitat i la col·laboració. Actualment estudiant de DAM a Prat Educació.</p>
+        <p>Desenvolupadora frontend apassionada per la tecnologia, la creativitat i la col·laboració.</p>
         <div class="social-links">
           <a href="https://github.com/maargaafeerriiool" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/margalida-ferriol-torres" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -38,99 +43,115 @@
         <a href="#contact" class="btn-primary">Contacta amb mi</a>
       </div>
       <div class="hero-img" data-aos="fade-left">
-        <img src="margalida.png" alt="Margalida Ferriol Torres" />
+        <img src="assets/margalida.png" alt="Margalida Ferriol Torres" />
       </div>
     </div>
   </header>
 
   <main class="container">
+    <!-- Sobre mi -->
     <section id="about" class="section" data-aos="fade-up">
       <h2>Sobre mi</h2>
-      <p>Sóc una desenvolupadora en formació que gaudeix resolent reptes i creant aplicacions útils. M’apassiona el disseny d’interfícies, la tecnologia web i l’aprenentatge continu. He col·laborat en projectes socials, com a monitora i com a membre actiu del sindicat d’estudiants del meu institut.</p>
+      <p>Estudiant de DAM a Prat Educació amb experiència en desenvolupament frontend. M’encanta aprendre, col·laborar i aportar valor a través de la tecnologia i el disseny.</p>
     </section>
 
+    <!-- Habilitats -->
     <section id="skills" class="section" data-aos="fade-up">
       <h2>Habilitats</h2>
       <div class="skills-grid">
-        <div>
-          <h3>🌐 Frontend</h3>
-          <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Tailwind CSS</li></ul>
-        </div>
-        <div>
-          <h3>💻 Backend i Dades</h3>
-          <ul><li>Java</li><li>Firebase</li><li>MySQL</li><li>Python</li><li>XML</li></ul>
-        </div>
-        <div>
-          <h3>🧰 Eines i Frameworks</h3>
-          <ul><li>Git & GitHub</li><li>Overleaf</li><li>Docker</li><li>Webpack</li></ul>
-        </div>
-        <div>
-          <h3>🚀 Metodologies i Pràctiques</h3>
-          <ul><li>SCRUM</li><li>Agile</li><li>Responsive Design</li><li>Multiplataforma</li></ul>
-        </div>
+        <div><h3>🌐 Frontend</h3><ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React</li><li>Tailwind</li></ul></div>
+        <div><h3>💻 Backend i Dades</h3><ul><li>Java</li><li>Firebase</li><li>MySQL</li><li>Python</li><li>XML</li></ul></div>
+        <div><h3>🧰 Eines i Frameworks</h3><ul><li>Git & GitHub</li><li>Overleaf</li><li>Docker</li><li>Webpack</li></ul></div>
+        <div><h3>🚀 Metodologies</h3><ul><li>SCRUM</li><li>Agile</li><li>Responsive Design</li><li>Multiplataforma</li></ul></div>
       </div>
     </section>
 
+    <!-- Projectes -->
     <section id="projects" class="section" data-aos="fade-up">
       <h2>Projectes</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>🌟 Portfolio Web</h3>
-          <p>Web personal feta amb HTML, CSS i JS, amb disseny adaptat a dispositius mòbils i estil propi.</p>
-          <a href="#">Veure projecte</a>
+          <h3>Portfolio Web</h3>
+          <p>Web personal amb HTML, CSS i JS per mostrar el meu perfil professional.</p>
         </div>
         <div class="project-card">
-          <h3>🛒 Ecommerce de Mostres</h3>
-          <p>Aplicació amb React i Firebase per mostrar productes d’una empresa de construcció de ferro.</p>
-          <a href="#">Veure projecte</a>
+          <h3>Ecommerce Mostres</h3>
+          <p>Aplicació React + Firebase per una empresa de ferro.</p>
         </div>
         <div class="project-card">
-          <h3>📱 App Android amb Firebase</h3>
-          <p>Aplicació creada durant un curs d’estiu a la UAB amb autenticació i base de dades a temps real.</p>
-          <a href="#">Veure projecte</a>
+          <h3>App Firebase UAB</h3>
+          <p>Aplicació mòbil amb Firestore i Auth creada en un curs d’estiu.</p>
         </div>
       </div>
     </section>
 
+    <!-- Experiència -->
     <section id="experience" class="section" data-aos="fade-up">
       <h2>Experiència</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <h3>Frontend Developer · Firechip</h3>
-          <span>Nov 2024 - Abr 2025</span>
-          <p>Desenvolupament de sistemes de disseny amb React, integració de GraphQL i creació de PWA accessibles.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Monitora de Lleure · Eix Estels</h3>
-          <span>Juliol 2024</span>
-          <p>Coordinació d’activitats educatives amb infants, incloent alumnes amb NESE.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Representant d’Estudiants · IES Artà</h3>
-          <span>2018 - 2023</span>
-          <p>Participació en assemblees, defensa de drets estudiantils i promoció d’esdeveniments formatius.</p>
-        </div>
+        <div class="timeline-item"><h3>Frontend Developer · Firechip</h3><span>Nov 2024 - Abr 2025</span><p>Interfícies amb React, GraphQL i PWA.</p></div>
+        <div class="timeline-item"><h3>Monitora · Eix Estels</h3><span>Juliol 2024</span><p>Activitats amb infants i NESE.</p></div>
+        <div class="timeline-item"><h3>Fet de Ferro</h3><span>Juny - Setembre 2024</span><p>Autònoma: atenció client, arxiu, factures.</p></div>
       </div>
     </section>
 
+    <!-- Formació -->
     <section id="education" class="section" data-aos="fade-up">
       <h2>Formació</h2>
       <div class="cards">
         <div class="card"><h3>CFGS DAM · Prat Educació</h3><span>2023 - 2025</span></div>
         <div class="card"><h3>Batxillerat Tecnològic · IES Llorenç Garcías i Font</h3><span>2021 - 2023</span></div>
-        <div class="card"><h3>Curs d’Aplicacions amb Firebase · UAB</h3><span>2022</span></div>
-        <div class="card"><h3>Galops 1 i 2 · Esports Eqüestres</h3><span>2017</span></div>
       </div>
     </section>
 
+    <!-- Certificats -->
+    <section id="certificats" class="section" data-aos="fade-up">
+      <h2>Certificats</h2>
+      <div class="certificats-grid">
+        <div class="certificat-card"><h4>Curs Apps Firebase · UAB</h4><p>2022</p></div>
+        <div class="certificat-card"><h4>Curs Monitora + NESE</h4><p>2024</p></div>
+        <div class="certificat-card"><h4>Galops 1 i 2</h4><p>Esports Eqüestres · 2017</p></div>
+      </div>
+    </section>
+
+    <!-- Aficions -->
+    <section id="aficions" class="section" data-aos="fade-up">
+      <h2>Aficions</h2>
+      <div class="aficions-grid">
+        <div class="aficio-card"><h4>🐴 Equitació</h4><p>Passió per muntar a cavall des de petita.</p></div>
+        <div class="aficio-card"><h4>🧠 Aprendre coses noves</h4><p>M'encanta investigar i créixer com a programadora.</p></div>
+        <div class="aficio-card"><h4>🎨 Disseny i creativitat</h4><p>Crear interfícies que connectin amb l’usuari.</p></div>
+      </div>
+    </section>
+
+    <!-- Idiomes -->
+    <section id="idiomes" class="section" data-aos="fade-up">
+      <h2>Idiomes</h2>
+      <div class="idiomes-grid">
+        <div class="idioma-card"><h4>Català</h4><p>Nadiu</p></div>
+        <div class="idioma-card"><h4>Castellà</h4><p>Nadiu</p></div>
+        <div class="idioma-card"><h4>Anglès</h4><p>Nivell B2</p></div>
+      </div>
+    </section>
+
+    <!-- Contacte -->
     <section id="contact" class="section" data-aos="fade-up">
       <h2>Contacte</h2>
-      <p>Vols col·laborar amb mi o tens alguna proposta? Escriu-me!</p>
+      <p>Pots contactar amb mi a través del formulari següent o per xarxes socials.</p>
       <ul class="contact-list">
         <li><i class="fas fa-envelope"></i> mferrioltorres@gmail.com</li>
-        <li><i class="fab fa-github"></i> github.com/maargaafeerriiool</li>
-        <li><i class="fab fa-linkedin"></i> linkedin.com/in/margalida-ferriol-torres</li>
+        <li><i class="fas fa-phone"></i> +34 638 90 45 17</li>
+        <li><i class="fas fa-map-marker-alt"></i> Carrer Pep Not 24, Artà, Illes Balears</li>
       </ul>
+      <form class="contact-form">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Correu electrònic</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Missatge</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
