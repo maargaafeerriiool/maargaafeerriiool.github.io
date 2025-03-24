@@ -1,12 +1,15 @@
-// Script opcional para agregar interactividad
-document.addEventListener("DOMContentLoaded", () => {
-    const topButton = document.createElement('button');
-    topButton.textContent = 'Back to Top';
-    topButton.style.position = 'fixed';
-    topButton.style.bottom = '20px';
-    topButton.style.right = '20px';
-    topButton.addEventListener('click', () => {
-        window.scrollTo(0, 0);
+// Activar animacions amb AOS.js
+AOS.init({
+  duration: 800,
+  once: true,
+});
+
+// Scroll suau per enllaços del navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
-    document.body.appendChild(topButton);
+  });
 });
