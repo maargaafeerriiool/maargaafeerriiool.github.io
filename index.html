@@ -1,135 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margalida Ferriol Torres - Frontend Developer</title>
+    <title>Margalida Ferriol Torres - Desenvolupadora Frontend</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <img src="margalida.png" alt="Margalida Ferriol Torres" class="profile-img">
-        <h1>Margalida Ferriol Torres</h1>
-        <p class="role">Frontend Developer</p>
-        <div class="social-links">
-            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/margalida-ferriol-torres/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:mferrioltorres@gmail.com"><i class="fas fa-envelope"></i></a>
+        <div class="container header-flex">
+            <img src="margalida.png" alt="Margalida Ferriol Torres" class="profile-img">
+            <div class="header-text">
+                <h1>Margalida Ferriol Torres</h1>
+                <p class="role">Desenvolupadora Frontend</p>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/margalida-ferriol-torres/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:mferrioltorres@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About me</h2>
-        <p>
-            I'm a passionate frontend developer currently studying Multiplatform Application Development at Prat Educació. 
-            I love building apps, exploring new technologies, and working collaboratively. 
-            My experience spans from coding to volunteering, customer service, and working with kids with special needs.
-        </p>
-    </section>
+    <main class="container">
+        <section id="about" class="fade-in">
+            <h2>Sobre mi</h2>
+            <p>
+                Sóc una desenvolupadora frontend apassionada, actualment estudiant Desenvolupament d’Aplicacions Multiplataforma a Prat Educació. M’encanta crear aplicacions útils, intuïtives i boniques, i gaudeixo treballant en equip, aprenent tecnologies noves i participant en projectes socials.
+            </p>
+        </section>
 
-    <section id="experience" class="container">
-        <h2>Experience</h2>
+        <section id="skills" class="fade-in">
+            <h2>Habilitats i Tecnologies</h2>
 
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3>Frontend Developer (Intern)</h3>
-                <span class="company">Firechip</span>
-                <span class="date">Nov 2024 - Apr 2025</span>
-                <span class="location">Barcelona, Catalonia, Spain</span>
+            <h3>🔧 Desenvolupament Web</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
+                <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+                <div class="skill-card"><i class="fab fa-react"></i><h3>React</h3></div>
+                <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
+                <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
             </div>
-            <ul class="experience-details">
-                <li>Developed and maintained React design systems for multiple brands.</li>
-                <li>Built PWAs with focus on performance and accessibility.</li>
-                <li>Integrated GraphQL APIs for efficient data fetching.</li>
-                <li>Worked on responsive UIs for IoT and mobile device apps.</li>
-            </ul>
-        </div>
 
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3>Leisure Monitor Intern</h3>
-                <span class="company">Eix Estels</span>
-                <span class="date">July 2024</span>
-                <span class="location">Catalonia, Spain</span>
+            <h3>🛠️ Eines i Pràctiques</h3>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
+                <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
+                <div class="skill-card"><i class="fab fa-github"></i><h3>GitHub</h3></div>
+                <div class="skill-card"><i class="fas fa-file-code"></i><h3>Overleaf</h3></div>
+                <div class="skill-card"><i class="fab fa-docker"></i><h3>Docker</h3></div>
+                <div class="skill-card"><i class="fas fa-project-diagram"></i><h3>Agile</h3></div>
             </div>
-            <ul class="experience-details">
-                <li>Led and organized leisure activities for children, including those with special needs.</li>
-            </ul>
-        </div>
+        </section>
 
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3>Customer Service Assistant (Freelance)</h3>
-                <span class="company">Fet de Ferro</span>
-                <span class="date">June - Sept 2024</span>
-                <span class="location">Mallorca, Balearic Islands</span>
+        <section id="experience" class="fade-in">
+            <h2>Experiència Professional</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Desenvolupadora Frontend (Pràctiques)</h3>
+                    <span class="company">Firechip</span>
+                    <span class="date">Novembre 2024 - Abril 2025</span>
+                    <span class="location">Barcelona, Catalunya</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Desenvolupament de sistemes de disseny amb React.</li>
+                    <li>Creació de Progressive Web Apps accessibles i ràpides.</li>
+                    <li>Integració de GraphQL per a una gestió eficient de dades.</li>
+                    <li>Interfícies per a aplicacions IoT i dispositius mòbils.</li>
+                </ul>
             </div>
-            <ul class="experience-details">
-                <li>Handled customer service and administrative tasks including billing review and filing.</li>
-            </ul>
-        </div>
 
-        <div class="experience-card">
-            <div class="experience-header">
-                <h3>Board Member</h3>
-                <span class="company">Sindicat d'Estudiants IES Llorenç Garcías i Font</span>
-                <span class="date">2018 - 2023</span>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Monitora en pràctiques</h3>
+                    <span class="company">Eix Estels</span>
+                    <span class="date">Juliol 2024</span>
+                    <span class="location">Catalunya</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Organització d’activitats per infants, també amb necessitats educatives especials.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Atenció al client (autònoma)</h3>
+                    <span class="company">Fet de Ferro</span>
+                    <span class="date">Juny - Setembre 2024</span>
+                    <span class="location">Mallorca, Illes Balears</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Gestió de facturació, arxiu i comunicació amb clients.</li>
+                </ul>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3>Membre del Consell d'Estudiants</h3>
+                    <span class="company">Sindicat d'Estudiants IES Llorenç Garcías i Font</span>
+                    <span class="date">2018 - 2023</span>
+                    <span class="location">Artà, Mallorca</span>
+                </div>
+                <ul class="experience-details">
+                    <li>Promoció de drets estudiantils i organització d’activitats educatives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education" class="fade-in">
+            <h2>Formació Acadèmica</h2>
+            <div class="education-card">
+                <h3>CFGS Desenvolupament d'Aplicacions Multiplataforma</h3>
+                <span class="institution">Prat Educació</span>
+                <span class="date">2023 - 2025</span>
+                <span class="location">Barcelona</span>
+            </div>
+            <div class="education-card">
+                <h3>Batxillerat Tecnològic</h3>
+                <span class="institution">IES Llorenç Garcías i Font</span>
+                <span class="date">2021 - 2023</span>
                 <span class="location">Artà, Mallorca</span>
             </div>
-            <ul class="experience-details">
-                <li>Organized educational events and defended student rights and wellbeing.</li>
+            <div class="education-card">
+                <h3>Curs d'Estiu "Fes la teva pròpia app"</h3>
+                <span class="institution">UAB</span>
+                <span class="date">2021 - 2022</span>
+            </div>
+        </section>
+
+        <section id="languages" class="fade-in">
+            <h2>Idiomes</h2>
+            <ul>
+                <li>Català: Nadiu</li>
+                <li>Castellà: Nadiu</li>
+                <li>Anglès: B2</li>
             </ul>
-        </div>
-    </section>
-
-    <section id="education" class="container">
-        <h2>Education</h2>
-        <div class="education-card">
-            <h3>CFGS Multiplatform Application Development</h3>
-            <span class="institution">Prat Educació</span>
-            <span class="date">2023 - 2025</span>
-            <span class="location">Barcelona, Catalonia</span>
-        </div>
-        <div class="education-card">
-            <h3>Technological Baccalaureate</h3>
-            <span class="institution">IES Llorenç Garcías i Font</span>
-            <span class="date">2021 - 2023</span>
-            <span class="location">Artà, Mallorca</span>
-        </div>
-        <div class="education-card">
-            <h3>Summer Course "Create your own app"</h3>
-            <span class="institution">UAB</span>
-            <span class="date">2021 - 2022</span>
-        </div>
-    </section>
-
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card"><i class="fab fa-html5"></i><h3>HTML</h3></div>
-            <div class="skill-card"><i class="fab fa-css3-alt"></i><h3>CSS</h3></div>
-            <div class="skill-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
-            <div class="skill-card"><i class="fab fa-react"></i><h3>React</h3></div>
-            <div class="skill-card"><i class="fab fa-java"></i><h3>Java</h3></div>
-            <div class="skill-card"><i class="fas fa-database"></i><h3>MySQL</h3></div>
-            <div class="skill-card"><i class="fab fa-git-alt"></i><h3>Git</h3></div>
-            <div class="skill-card"><i class="fas fa-file-code"></i><h3>Overleaf</h3></div>
-            <div class="skill-card"><i class="fab fa-python"></i><h3>Python</h3></div>
-        </div>
-    </section>
-
-    <section id="languages" class="container">
-        <h2>Languages</h2>
-        <ul>
-            <li>Catalan: Native</li>
-            <li>Spanish: Native</li>
-            <li>English: B2</li>
-        </ul>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Margalida Ferriol Torres. All rights reserved.</p>
+        <p>&copy; 2025 Margalida Ferriol Torres. Tots els drets reservats.</p>
     </footer>
 </body>
 </html>
